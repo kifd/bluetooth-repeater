@@ -1,0 +1,30 @@
+{
+    "KPlugin": {
+        "Name": "ThermoBeacon Display",
+        "Authors": [
+            {
+                "Email": "contact@drakard.com",
+                "Name": "Keith Drakard"
+            }
+        ],
+        "Category": "Environment and Weather",
+        "Description": "Temperature and humidity as detected by Thermobeacons.",
+        "EnabledByDefault": true,
+        "FormFactors": [
+            "tablet",
+            "handset",
+            "desktop"
+        ],
+        "Icon": "weather-clear",
+        "Id": "com.drakard.thermobeacon",
+        "License": "BSD",
+        "ServiceTypes": [
+            "Plasma/Applet"
+        ],
+        "Version": "0.1"
+    },
+    "X-Plasma-API": "declarativeappletscript",
+    "X-Plasma-MainScript": "ui/main.qml",
+    "X-Plasma-StandAloneApp": true,
+    "X-Plasma-DefaultSize": "150,150"
+}

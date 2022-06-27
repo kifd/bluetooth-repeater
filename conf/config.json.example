@@ -1,0 +1,24 @@
+{
+    "logging": "info",
+    
+    "network": {
+        "address": "your.receiving.computer.ip",
+        "rpyc_port": 51076,
+        "ws_daemon": 51077,
+        "granularity": 60
+    },
+    
+    "thermobeacons": {
+        "aa:bb:cc:dd:ee:f1": "room 1",
+        "aa:bb:cc:dd:ee:f2": "room 2",
+        "aa:bb:cc:dd:ee:f3": "room 3",
+    },
+    
+    "influx": {
+        "bucket": "YourBucketName",
+        "url": "http://your.influx.server:port",
+        "org": "YourOrgName",
+        "api_token": "YourApiKey"
+    }
+
+}

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0
+      http://www.kde.org/standards/kcfg/1.0/kcfg.xsd" >
+  <kcfgfile name=""/>
+
+  <group name="MonitorLocation">
+    <entry name="daemonHost" type="String">
+        <default>127.0.0.1</default>
+    </entry>
+    <entry name="daemonPort" type="int">
+        <default>51077</default>
+    </entry>
+    <entry name="pollInterval" type="int">
+        <default>20</default>
+    </entry>
+  </group>
+    
+    
+  <group name="BeaconToMonitor">
+    <entry name="macAddressesAvailable" type="StringList">
+        <default></default>
+    </entry>
+    <entry name="macAddress" type="String">
+        <default></default>
+    </entry>
+    <entry name="macFriendly" type="String">
+        <default>Location</default>
+    </entry>
+  </group>
+
+  
+  <group name="Display">
+    <entry name="showAlias" type="bool">
+        <default>true</default>
+    </entry>
+    <entry name="aliasBackgroundColor" type="Color">
+        <default>#000000</default>
+    </entry>
+  </group>
+    
+  <group name="Temperature">
+    <entry name="temperatureBackgroundColor" type="Color">
+        <default>#000000</default>
+    </entry>
+    <entry name="temperatureTextColor" type="Color">
+        <default>#ffffff</default>
+    </entry>
+    <entry name="temperatureUnits" type="StringList">
+        <default>centigrade,fahrenheit,kelvin</default>
+    </entry>
+    <entry name="temperatureUnitSelected" type="int">
+        <default>0</default>
+    </entry>
+    <entry name="temperatureDecimals" type="int">
+        <default>0</default>
+    </entry>
+    <entry name="showTemperatureUnits" type="bool">
+        <default>true</default>
+    </entry>
+  </group>
+    
+  
+  <group name="Humidity">
+    <entry name="humidityBackgroundColor" type="Color">
+        <default>#000000</default>
+    </entry>
+    <entry name="showHumidity" type="bool">
+        <default>true</default>
+    </entry>
+    <entry name="humidityDecimals" type="int">
+        <default>0</default>
+    </entry>
+    <entry name="showHumidityPercent" type="bool">
+        <default>true</default>
+    </entry>
+  </group>
+  
+  
+</kcfg>
+

@@ -1,0 +1,26 @@
+# copy to:        /etc/systemd/system/blereceiver@.service
+# reload systemd: systemctl daemon-reload
+# enable on boot: systemctl enable blereceiver@username
+# and start it:   systemctl start blereceiver@username
+
+[Unit]
+Description=Bluetooth Repeater Service
+After=local-fs.target network.target
+
+StartLimitIntervalSec=500
+StartLimitBurst=15
+
+[Service]
+Type=simple
+Nice=10
+IOSchedulingClass=best-effort
+IOSchedulingPriority=5
+
+User=%i
+ExecStart=/usr/bin/env -S "PATHTOBLEDIRECTORY/.venv/bin/blereceiver"
+
+Restart=always
+RestartSec=5s
+
+[Install]
+WantedBy=multi-user.target
